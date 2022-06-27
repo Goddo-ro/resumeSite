@@ -165,10 +165,25 @@ section {
 
 #skills {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #393E46, #00ADB5);
+  font-size: 1.75em;
+}
+#skills h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #EEEEEE;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
 }
 
 .wrapper {
@@ -180,7 +195,7 @@ section {
 }
 .wrapper .card {
   width: calc(33% - 20px);
-  background: #fff;
+  background: #393E46;
   height: 300px;
   border-radius: 5px;
   display: flex;
@@ -195,7 +210,7 @@ section {
 }
 .wrapper .card .circle .box span,
 .wrapper .card .text {
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #00ADB5, #458EF1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -221,7 +236,7 @@ section {
   transform: translate(-50%, -50%) scale(1.07);
 }
 .wrapper .card .circle .box span {
-  font-size: 2em;
+  font-size: 1.25em;
   font-weight: 600;
   font-family: sans-serif;
 }
@@ -243,7 +258,7 @@ footer p {
   }
 
   .wrapper {
-    width: 700px;
+    width: 100%;
   }
   .wrapper .card {
     width: calc(50% - 20px);
@@ -252,18 +267,6 @@ footer p {
 @media (max-width: 505px) {
   body {
     font-size: 14px;
-  }
-
-  .wrapper {
-    width: 700px;
-  }
-  .wrapper .card {
-    width: 100%;
-  }
-
-  #about-me {
-    padding: 20px;
-    width: calc(100% - 40px);
   }
 
   #presentation {
@@ -275,5 +278,19 @@ footer p {
   }
   #presentation .initials {
     position: 0;
+  }
+
+  #about-me {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .wrapper .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

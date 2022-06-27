@@ -4,7 +4,7 @@ let options = {
     startAngle: -1.55,
     size: 150,
     value: 0.70,
-    fill: {gradient: ["#a445b2", "#fa4299"]}
+    fill: {gradient: ["#00ADB5", "#458EF1"]}
 }
 
 
