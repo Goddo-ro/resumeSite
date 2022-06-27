@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap");
+:root {
+  --bg-color: hsl(49 37% 94%);
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 13;
+}
+
 body {
   margin: 0;
   min-width: 250px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -24,10 +32,82 @@ section {
   border-top: 1px solid black;
 }
 
-#presentation {
-  background-color: #f12f4f;
+.initials {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 30%;
+  left: 25%;
+  text-align: right;
+  font-size: 1.5em;
+}
+.initials h1, .initials p {
+  margin: 0;
+  padding: 0;
+}
+.initials #greetings {
+  font-size: 1.25em;
+}
+.initials #names {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
+#anim-container {
+  position: absolute;
+  right: 0;
+}
+
+.anim-typewriter {
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  font-size: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.anim-typewriter::before, .anim-typewriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.anim-typewriter::before {
+  background: #fff;
+  -webkit-animation: typewriter 2s steps(13) 1s forwards;
+          animation: typewriter 2s steps(13) 1s forwards;
+}
+.anim-typewriter::after {
+  width: 0.125em;
+  background: black;
+  -webkit-animation: typewriter 2s steps(13) 1s forwards, blink 750ms steps(13) infinite;
+          animation: typewriter 2s steps(13) 1s forwards, blink 750ms steps(13) infinite;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
 #about-me {
   background-color: #f123f4;
 }
