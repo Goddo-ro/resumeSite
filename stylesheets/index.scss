@@ -196,6 +196,7 @@ section {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
+        margin-bottom: 20px;
 
         .text {
             font-size: 20px;
@@ -267,7 +268,6 @@ footer {
 
         .card {
             width: calc(50% - 20px);
-            margin-bottom: 20px;
         }
     }
 }

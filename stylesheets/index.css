@@ -187,6 +187,7 @@ section {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .wrapper .card .text {
   font-size: 20px;
@@ -246,7 +247,6 @@ footer p {
   }
   .wrapper .card {
     width: calc(50% - 20px);
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 505px) {
