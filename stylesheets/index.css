@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap");
 body {
+  padding: 0;
   margin: 0;
-  min-width: 250px;
+  min-width: 144px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -46,14 +47,15 @@ header {
 }
 
 section {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   z-index: 1;
 }
 
 #presentation {
   background: #EEEEEE;
   color: #222831;
+  height: 100vh;
 }
 
 .initials {
@@ -162,7 +164,65 @@ section {
 }
 
 #skills {
-  background-color: #12f324;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+
+.wrapper {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .card {
+  width: calc(33% - 20px);
+  background: #fff;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.wrapper .card .text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper .card .circle .box span,
+.wrapper .card .text {
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .card .circle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.wrapper .card .circle .box, .wrapper .card .circle .box span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s;
+}
+.wrapper .card .circle .box {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.wrapper .card .circle:hover .box {
+  transform: translate(-50%, -50%) scale(1.07);
+}
+.wrapper .card .circle .box span {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 footer {
@@ -174,4 +234,46 @@ footer {
 }
 footer p {
   margin: 0;
+}
+
+@media (max-width: 753px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 700px;
+  }
+  .wrapper .card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 505px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 700px;
+  }
+  .wrapper .card {
+    width: 100%;
+  }
+
+  #about-me {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+
+  #presentation {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  #presentation .initials {
+    position: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
