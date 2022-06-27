@@ -16,6 +16,13 @@ header {
     align-items: center;
     top: 0;
     padding: 5px;
+    padding-left: 0;
+}
+
+.header-img {
+    height: 100%;
+    float: left;
+    margin-right: 1rem;
 }
 
 .navbar { 
@@ -41,10 +48,11 @@ header {
 section {
     width: 100%;
     height: 100vh;
-    border-top: 1px solid black;
 }
 
 #presentation {
+    background-color: $presentaion-bcg;
+    color: $header-bcg;
 }
 
 .initials {
@@ -119,7 +127,6 @@ section {
 }
 
 #about-me {
-    background-color: #f123f4;
 }
 
 #skills {
