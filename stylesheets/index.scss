@@ -138,17 +138,20 @@ section {
 // About me
 
 #about-me {
+    background: $dark-gray;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
     padding-top: 10px;
+    padding-bottom: 0;
     width: calc(100% - 100px);
     font-size: 1.22em;
 
     h3 {
         width: fit-content;
-        border-bottom: 1px solid $dark-gray;
+        border-bottom: 1px solid $white;
     }
 
     p {
@@ -161,7 +164,7 @@ section {
 
     .even {
         padding-left: 25px;
-        border-left: 1px solid $dark-gray;
+        border-left: 1px solid $white;
     }
 }
 
