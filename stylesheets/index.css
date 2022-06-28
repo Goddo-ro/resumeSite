@@ -52,10 +52,60 @@ section {
   z-index: 1;
 }
 
+.list-container {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  background-color: rgba(34, 40, 49, 0.75);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  right: 0;
+  list-style: none;
+}
+.list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.list li {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list a {
+  color: #EEEEEE;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.list a:visited {
+  color: #EEEEEE;
+}
+.list a:active, .list a:hover {
+  background: #393E46;
+}
+
 #presentation {
   background: #EEEEEE;
   color: #222831;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .initials {
@@ -63,10 +113,9 @@ section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  top: 40%;
-  left: 25%;
   text-align: right;
   font-size: 1.75em;
+  flex: 0 0 45%;
 }
 .initials h1, .initials p {
   margin: 0;
@@ -362,7 +411,7 @@ footer {
   bottom: 0;
   background-color: #393E46;
   width: 100%;
-  height: 200px;
+  height: 100px;
 }
 footer p {
   margin: 0;
