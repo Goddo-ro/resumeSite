@@ -201,10 +201,14 @@ section {
   width: fit-content;
   border-bottom: 1px solid #EEEEEE;
 }
+#about-me .resume-link {
+  text-decoration: none;
+  color: #458EF1;
+}
 #about-me p {
   max-width: 1400px;
 }
-#about-me p span {
+#about-me span {
   color: #00ADB5;
 }
 #about-me .even {

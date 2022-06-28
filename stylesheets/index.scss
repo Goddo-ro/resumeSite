@@ -127,8 +127,6 @@ section {
 .initials {
     position: relative;
     width: fit-content;
-    // top: 40%;
-    // left: 25%;
     text-align: right;
     font-size: 1.75em;
     flex: 0 0 45%;
@@ -215,11 +213,16 @@ section {
         border-bottom: 1px solid $white;
     }
 
+    .resume-link {
+        text-decoration: none;
+        color: $blue;
+    }
+
     p {
         max-width: 1400px;
     }
 
-    p span {
+    span {
         color: $aqua;
     }
 
