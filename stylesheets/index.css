@@ -107,7 +107,30 @@ section {
   justify-content: left;
   align-items: center;
 }
+#presentation .image {
+  margin-left: 100px;
+  opacity: 0;
+  transform: translateY(3rem);
+  -webkit-animation: fadeInUp 2s ease 1.25s forwards;
+          animation: fadeInUp 2s ease 1.25s forwards;
+}
+#presentation .image img {
+  height: 200px;
+}
 
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .initials {
   position: relative;
   width: -webkit-fit-content;
