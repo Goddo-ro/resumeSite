@@ -362,7 +362,7 @@ section {
   
 .mySlides {
     display: none;
-
+    
     img {
         height: 600px;
         width: 1160px;
@@ -476,6 +476,9 @@ footer {
     p:not(:last-child) {
         margin-bottom: 2px;
     }
+}
+
+@media (max-width: 1160px) {
 }
 
 @media (max-width: 753px) {
